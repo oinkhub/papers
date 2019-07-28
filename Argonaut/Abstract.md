@@ -19,3 +19,13 @@ on OSX it is system default (always retina on)
 - Timeout
 -- Get ready for 20+ seconds delay
 -- Has no rea timeout support, you have to implement it yourself
+
+- Don't create a strong reference to shooter or it will lead to memory leaks
+
+- Size should be multiple of 256, but sizes bigger than 2560 (10x) start having issues with rendering overlays. Maximum x is 19.
+Optimal is 5
+
+- Maximum zoom = 20
+
+- You want to use a bigger image and cropped otherwise the annotations won't render properly and it will look with considerable bad quality
+
