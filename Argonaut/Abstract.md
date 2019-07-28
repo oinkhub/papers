@@ -13,7 +13,8 @@ if #available(OSX 10.14, *) {
                             $0.appearance = NSAppearance(named: .vibrantDark)
                         }
 
-- Retina only available on iOS
+- Retina can only be modified on iOS
+on OSX it is system default (always retina on)
 
 - Timeout
 -- Get ready for 20+ seconds delay
