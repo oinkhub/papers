@@ -66,3 +66,9 @@ for some reason I never got heading updates on MKUserLocation so needed to imple
 # MKMapSnapshotter
 It didn't work on the simulator for iOS 11 and the first versions of iOS 12
 In iOS 13 seems to not be working, just displays a black screen, both in light and dark modes
+
+
+
+
+
+# Google
