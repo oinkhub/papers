@@ -1,0 +1,2 @@
+One of the downsides of an excellent memory is I remember every weird book I didn’t buy, now want to finish, and will never see again. Better to just buy the books. Shelving is cheaper than regret.
+- Kent Beck

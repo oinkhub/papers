@@ -1,5 +1,6 @@
-Fixed a few visual issues.
-We hope this new version is able to help you travel and navigate.
+Slight improvement to performance when loading maps.
+May Argo follow you in your travels.
+
 
 
 off,line,offline,map,navigation,maps,navigations,direction,directions,gps,travel,naut,location,pos
