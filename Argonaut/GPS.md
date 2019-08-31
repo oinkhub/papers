@@ -23,3 +23,18 @@ GPS satellites are simply beacons, like lighthouses, that a device uses to calcu
 GPS positioning works on two basic mathematical concepts. The first is called trilateration, which literally means positioning from three distances. The second concept is the relationship between distance traveled, rate (speed) of travel and amount of time spent traveling, or:
 
 Distance = Rate × Time
+
+
+
+
+Assisted GPS or Augmented GPS (abbreviated generally as A-GPS and less commonly as aGPS) is a system that often significantly improves the startup performance—i.e., time-to-first-fix (TTFF)—of a GPS satellite-based positioning system
+- Wikipedia
+
+Time to first fix
+- Cold
+-- Getting signal from a satellite.
+-- Getting almanac
+- Warm
+-- Getting ephemeris
+- Hot
+-- TTSF time to subsequent fix 
