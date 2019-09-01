@@ -17,3 +17,5 @@ But you need to be logged in.
 If you didn't save previously an offline area you might still have the fortunate of Google Maps caching the last areas that you where viewing in the app. It is not perfectly clear how the cache is managed and you don't have any kind of control over it.
 
 If using Apple Maps then it is a bit harder, this app also caches last spots you viewed, mostly on areas zoomed out, but it has no option to save for offline use.
+
+Google and Apple maps seem to be good even if you don't grant them access to your location
