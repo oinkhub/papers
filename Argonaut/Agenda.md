@@ -60,7 +60,7 @@ by the United Nations
 # Solution
 - How does it work online
 - What is usable offline
-- What can we add
+- What can we store
 
 ## How does it work online
 - Components of navigation
@@ -107,6 +107,20 @@ Set of images that we can associate with a region
 ## What a map actually is
 >> This is how it actually works
 
+Each image represents a region with a certain amount of detail
+The smaller the region, the more detail you could add
+
+## Region
+A geometrical representation of the world in 2d.
+A rectangle from this coordinate to this other.
+
+## Providers
+- Apple Maps
+- Google Maps
+- OpenStreetMap
+- Here
+- TomTom
+
 ## Point of interest
 Information associated with a location.
 
@@ -128,4 +142,67 @@ How to go from a point of interest to another.
 
 From Aberystwyth University to the Castle
 
-Usually consists of a set of coordinates
+A route consisting of a set of coordinates to pass when traveling between 2 locations.
+
+## Can also contain
+- Distance
+- Expected duration
+- Type of travel
+   Walking
+   Driving
+   Cycling
+
+And indications specific per point in the route.
+
+- Here turn left
+
+## Interactions
+
+>>> A map consists of images associated with coordinates
+>>> Points of interests are information associated with coordinates
+>>> Directions is information associated with coordinates
+
+## Flow
+
+>>> Your device receive its location from the GPS, then an app can request information for the region around itself from its provider. Finally, it displays images of the map in the region, with points of interest nearby and probably a blue dot representing itself.
+
+## On demand
+
+>>> You select a point of interest you want to go and the app requests directions, its provider returns a route and information, and the app can display lines and gives you instructions.
+
+## Offline
+- Your location
+- Area around you
+
+## Online
+- Images
+- Points of interest
+- Routes
+
+## But these are static
+- Images
+- Points of interest
+
+>>> Rarely a point of interest changes, and images for maps get updated every few years.
+
+
+And routes between to known points of interests are also static*
+
+- Without real time information like traffic and construction works.
+
+## What can we store
+- Maps important for our app
+- Maps requested by you
+- Points of interests for our app
+- Directions between points
+- Directions requested by you
+
+>>> If we have an app that helps you get around Aber we could store directions between the train station and the castle, because we know that most people would want to visit it.
+
+>>> And maybe you could request the app to store directions between the train station and the university, because you know you will want to go there.
+
+## Drawbacks
+- Needs to be online first
+- Uses memory storage
+- Might not be free (provider)
+- No real time
