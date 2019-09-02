@@ -86,3 +86,17 @@ Satellites acting as beacons that devices can listen to calculate their own lati
 
 >>> It is common to associate navigation with GPS, as we can see from the home page of gps.gov
 
+>>> The problem is not GPS! GPS is not the map.
+
+>>> GPS only gives you the position of the blue dot, not the map.
+
+>>> Your device gets the signal from the satellites and can tell you where you are.
+You are theoretically in the range of vision of at least 4 satellites at all time, anywhere in the world.
+It is theoretically because the signal is quite weak and if you are underground or indoors you might get different results.
+
+## Map
+Set of images that we can associate with a region
+- Computer generated images
+- Satellite imagery
+- Aerial photography
+
