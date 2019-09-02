@@ -201,8 +201,44 @@ And routes between to known points of interests are also static*
 
 >>> And maybe you could request the app to store directions between the train station and the university, because you know you will want to go there.
 
-## Drawbacks
+## Disadvantages
 - Needs to be online first
 - Uses memory storage
 - Might not be free (provider)
 - No real time
+
+# Implementation
+- MapKit
+- Map
+- Points of interests
+- Directions
+
+## MapKit
+Cons
+- Google Maps is more popular
+- Not as detailed.
+
+Pros
+- Out of the box (import MapKit)
+- No quota limit
+
+# info.plist
+iOS 8 - 10
+NSLocationAlwaysUsageDescription
+iOS 11+
+NSLocationWhenInUseUsageDescription
+macOS 10.14+
+NSLocationUsageDescription
+
+In Xcode 10 or below you need to
+enable Maps capabilities.
+No longer necessary in Xcode 11.
+
+For macOS you also need to enable
+access to location in capabilities.
+
+## Map
+
+MKMapSnapshotter
+- iOS 7+
+- macOS 10.9+
