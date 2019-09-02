@@ -99,4 +99,33 @@ Set of images that we can associate with a region
 - Computer generated images
 - Satellite imagery
 - Aerial photography
+- Vector rendering
 
+## How a map looks
+>>> This is how we usually see maps, a continuous visualisation of a area
+
+## What a map actually is
+>> This is how it actually works
+
+## Point of interest
+Information associated with a location.
+
+## Location
+- Latitude (north - south)
+- Longitude (east - west)
+
+## Aberystwyth Castle
+Location:
+   Latitude: 52.4135223
+   Longitude: -4.0880009
+Description: 13th-century seaside
+   fortress, built by Edward I
+Address: King Street, Aberystwyth
+   SY23 2AU, Wales
+
+## Directions
+How to go from a point of interest to another.
+
+From Aberystwyth University to the Castle
+
+Usually consists of a set of coordinates
