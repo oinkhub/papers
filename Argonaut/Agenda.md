@@ -57,9 +57,6 @@ by the United Nations
 -- On demand
 
 # Solution
-We can can navigate you,
-even if you are offline.
-
 - How does it work online
 - What is usable offline
 - What can we store
