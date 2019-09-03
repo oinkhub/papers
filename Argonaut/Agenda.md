@@ -4,7 +4,6 @@
 - Problem
 - Solution
 - Implementation
-- Related work
 - Conclusions
 
 # Problem
@@ -309,7 +308,33 @@ size: 4096
 
 To use these tiles in our MKMapView
 
-And in our MKMapViewDelegate
+Assuming we saved every tile with a name like
+x_y_x.png in the folder myFolder, for example:
+myFolder/1_0_1.png
+
+In our MKMapViewDelegate
 
 
 ## Points of interest
+
+We could store those relevant
+to our app.
+
+User's location will be shown, if granted permission, and don't store it.
+
+We can also let users select places they want to store.
+
+## Directions
+Once they are stored
+
+Things to consider
+- When creating a snapshot it might take up to 20 seconds to respond, and there is no timeout support.
+- You have to create a different MKMapSnapshotter for each image.
+- Size of the images should be divisible by 256, but preferably smaller than 2560. And the maximum supported is 4928.
+
+# Conclusions
+
+- Hope we can add more support for offline mode
+- Look for Argonaut in the AppStore (iOS and macOS)
+  it is free and OpenSource
+https://github.com/oinkhub/argonaut
