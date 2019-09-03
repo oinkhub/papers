@@ -202,7 +202,6 @@ And routes between to known points of interests are also static*
 >>> And maybe you could request the app to store directions between the train station and the university, because you know you will want to go there.
 
 ## Disadvantages
-- Needs to be online first
 - Uses memory storage
 - Might not be free (provider)
 - No real time
@@ -242,3 +241,75 @@ access to location in capabilities.
 MKMapSnapshotter
 - iOS 7+
 - macOS 10.9+
+
+>>> In order to interact with MKMapSnapshotter you need to create a MKMapSnapshooter.Options, set the map rect you
+want to be captured, instantiate the shotter with it, and call start.
+
+>>> You will receive a response asynchronously with an optional MKSnaposhotter.Snapshot and an optional error.
+
+>>> You can then retrieve the image from the snapshot, if everything went well. And store it, for example.
+
+>>> Now, when dealing with MapRects is when it gets tricky.
+
+## MKMapRect
+2d representation of the curved surface of the globe.
+Often used to show the entire surface of the globe all at once.
+
+But, before using MKMapRect we need to understand
+- MKMapPoint
+- Size of the world
+- Zoom level
+
+## MKMapPoint
+This data structure represents a point on the map.
+You can create them with coordinates, perform calculations with them and convert back to coordinate values.
+
+The entire surface of the globe,
+in points is
+
+>>> 268,435,456 points
+>>> Which we can check by printing MKMapRect.world.size
+
+## Zoom level
+We can use a z coordinate or zoom level to define how close or far we want to generate or map images.
+
+If we want to display the whole world at once,
+in a just one image, we could call that
+a tile at the position
+x: 0
+y: 0
+z: 0
+
+Zoom 1 divides zoom 0 into 4 tiles
+And zoom 2 divides each tile of zoom 1 into 4 again, and so on.
+
+If we want our image to be 256x256 pixels
+that would mean we can have 20 zoom levels, or:
+
+>>> log2(MKMapRect.world.width / 256)
+
+And the size of tiles in map points:
+
+>>> MKMapRect.world.width / pow(2, zoomLevel)
+
+256x256 is the default for MKMapSnapshotter
+and is also the standard with other providers.
+
+That also means we would need to have
+4^20 or 1,099,511,627,776 images at the
+maximum zoom to display the whole globe
+
+
+Aberystwyth castle
+x: 131166208
+y: 88162304
+z: 16
+size: 4096
+>>> Size is in map size
+
+To use these tiles in our MKMapView
+
+And in our MKMapViewDelegate
+
+
+## Points of interest
