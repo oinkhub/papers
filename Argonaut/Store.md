@@ -1,9 +1,7 @@
-Slight improvement to performance when loading maps.
-May Argo follow you in your travels.
+Featuring Flight Mode
+- Now you can create maps that can be used when traveling and you will know exactly where you are, either flying, in a train, or any other transport.
 
-
-
-off,line,offline,map,navigation,maps,navigations,direction,directions,gps,travel,naut,location,pos
+free,save,make,create,store,fly,flight,walk,drive,flying,walking,driving,explore,exploring,location,
 
 Offline maps and navigation.
 
@@ -18,3 +16,5 @@ Argonaut doesn't track your activity in any way and doesn't store or have access
 It is recommended to create small maps. Creating a map requires some considerable time and it might take a lot of energy and resources. Always try to create the smallest map possible, of maximum a few kilometres long.
 
 It is better to have several small maps for different points of interests instead of having a big map. Also it requires less resources, memory, and time.
+
+Now also supporting flight mode: Create a map between to cities or countries and follow your trip.
