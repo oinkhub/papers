@@ -1,0 +1,1 @@
+- Starting in iOS 13 every snaphot has the watermark of Apple in the left bottom corner.
