@@ -1,1 +1,3 @@
-- Starting in iOS 13 every snaphot has the watermark of Apple in the left bottom corner.
+- Starting in iOS 13 every MKMapSnapshotter has the watermark of Apple in the left bottom corner.
+- Apparently MKMapView is optimised so tiles bigger than 512x512pixels are not rendering correctly, better to use smaller tiles.
+- Starting in iOS 13 MKMapSnapshotter fails if you try to generate an image bigger than 2560x2560 and it seems you also get blocked for not trying again.
